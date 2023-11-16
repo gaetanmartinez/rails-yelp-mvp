@@ -1,0 +1,10 @@
+<h1>Restaurants#new</h1>
+<p>Find me in app/views/restaurants/new.html.erb</p>
+
+<%= simple_form_for @restaurant do |restaurant| %>
+  <p><%= restaurant.input :name %></p>
+<p><%= restaurant.input :address%></p>
+<p><%= restaurant.input :phone_number%></p>
+<p><%= restaurant.input :category%></p>
+<div class="btn btn-outline-warning"><%= restaurant.button :submit%></div>
+<% end %>

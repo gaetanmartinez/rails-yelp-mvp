@@ -1,0 +1,11 @@
+<h1>Restaurants#edit</h1>
+<p>Find me in app/views/restaurants/edit.html.erb</p>
+
+<%= simple_form_for @restaurant do |i| %>
+  <%= i.input :name %>
+  <%= i.input :category %>
+  <%= i.input :phone_number %>
+  <%= i.input :address %>
+  <%= i.button :submit, class: 'btn btn-primary' %>
+<% end %>
+<%= link_to "Back to restaurants", restaurants_path, class: 'btn btn-warning mt-2' %>
